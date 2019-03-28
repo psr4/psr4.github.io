@@ -1,0 +1,434 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>编译V8JS · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="nginx_proxy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    PHP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="php-zip.html">
+            
+                <a href="php-zip.html">
+            
+                    
+                    PHP打包后门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="reflection-demo.html">
+            
+                <a href="reflection-demo.html">
+            
+                    
+                    PHP反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="webshell.html">
+            
+                <a href="webshell.html">
+            
+                    
+                    PHP webshell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    环境
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="node_v8.html">
+            
+                <a href="node_v8.html">
+            
+                    
+                    node v8.0版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="nginx_proxy.html">
+            
+                <a href="nginx_proxy.html">
+            
+                    
+                    Nginx 代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="v8js.html">
+            
+                <a href="v8js.html">
+            
+                    
+                    编译V8JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    IOS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="build_ios_key.html">
+            
+                <a href="build_ios_key.html">
+            
+                    
+                    生成IPA证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    杂项
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="win10_repair.html">
+            
+                <a href="win10_repair.html">
+            
+                    
+                    win10应用修复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <a target="_blank" href="http://webpack.weapp.cc/webpack/index.html">
+            
+                    
+                    webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >编译V8JS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="v8js-on-gnulinux">V8Js on GNU/Linux</h1>
+<p>Installation of V8Js on GNU/Linux is pretty much straight forward.</p>
+<p>The biggest hurdle actually is that you need a rather new V8 library.
+However many distributions still ship the rusty version 3.14, published
+years ago.</p>
+<p>This means that you usually need to compile V8 on your own before
+you can start to compile &amp; install V8Js itself.</p>
+<p>It is recommended to install the V8 version for V8Js off your system&apos;s
+load path, so it doesn&apos;t interfere with the V8 library shipped with your
+system&apos;s distribution.</p>
+<h2 id="snapshots">Snapshots</h2>
+<p>V8 has (optional) support for so-called snapshots which speed up startup
+performance drastically.  Hence they are generally recommended for use.</p>
+<p>There are two flavours of snapshots: internal &amp; external.</p>
+<p>Internal snapshots are built right into the V8 library (libv8.so file),
+so there&apos;s no need to handle them specially.</p>
+<p>Besides there are external snapshots (which are enabled unless configured
+otherwise).  If V8 is compiled with these, then V8Js needs to provide two
+&quot;binary blobs&quot; to V8, named <code>natives_blob.bin</code> and <code>snapshot_blob.bin</code>.
+In that case copy those two files to the same directory <code>libv8.so</code> was
+installed to.</p>
+<h2 id="compile-v8-56-and-newer-using-gn">Compile V8 5.6 and newer (using GN)</h2>
+<pre><code># Install required dependencies
+sudo apt-get install build-essential curl git python libglib2.0-dev
+
+cd /tmp
+
+# Install depot_tools first (needed for source checkout)
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+export PATH=`pwd`/depot_tools:&quot;$PATH&quot;
+
+# Download v8
+fetch v8
+cd v8
+
+# (optional) If you&apos;d like to build a certain version:
+git checkout 6.4.388.18
+gclient sync
+
+# Setup GN
+tools/dev/v8gen.py -vv x64.release -- is_component_build=true
+
+# Build
+ninja -C out.gn/x64.release/
+
+# Install to /opt/v8/
+sudo mkdir -p /opt/v8/{lib,include}
+sudo cp out.gn/x64.release/lib*.so out.gn/x64.release/*_blob.bin \
+  out.gn/x64.release/icudtl.dat /opt/v8/lib/
+sudo cp -R include/* /opt/v8/include/
+</code></pre><p>On Debian Stretch you need to set RPATH on the installed libraries,
+so the library loader finds the dependencies:</p>
+<pre><code>sudo apt-get install patchelf
+for A in /opt/v8/lib/*.so; do sudo patchelf --set-rpath &apos;$ORIGIN&apos; $A; done
+</code></pre><h2 id="compile-php-v8js-itself">Compile php-v8js itself</h2>
+<pre><code>cd /tmp
+git clone https://github.com/phpv8/v8js.git
+cd v8js
+phpize
+./configure --with-v8js=/opt/v8 LDFLAGS=&quot;-lstdc++&quot;
+make
+make test
+sudo make install
+</code></pre><p>Then add <code>extension=v8js.so</code> to your php.ini file. If you have a separate configuration for CLI, add it there also.</p>
+<p>V8Js&apos; build system assumes that the <code>icudtl.dat</code> file is located next to the <code>libv8.so</code>
+library file and compiles the path into the library itself.  If for whatever reason the
+<code>icudtl.dat</code> file is stored at a different place during runtime, you need to set the
+php.ini variable <code>v8js.icudtl_dat_path</code> to point to the file.  Otherwise locale-aware
+features of V8 will not work as expected.</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="nginx_proxy.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Nginx 代理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"编译V8JS","level":"1.3.3","depth":2,"next":{"title":"IOS","level":"1.4","depth":1,"ref":"","articles":[{"title":"生成IPA证书","level":"1.4.1","depth":2,"path":"notepad/build_ios_key.md","ref":"./notepad/build_ios_key.md","articles":[]}]},"previous":{"title":"Nginx 代理","level":"1.3.2","depth":2,"path":"notepad/nginx_proxy.md","ref":"./notepad/nginx_proxy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["fontsettings","-sharing","-lunr","-search","highlight","livereload"],"pluginsConfig":{"search":{"maxIndexSize":100000},"lunr":{"maxIndexSize":1000000000},"mathjax-commonhtml":{"defaultScaling":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"livereload":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"notepad/v8js.md","mtime":"2019-03-28T11:30:46.614Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-28T12:00:10.525Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,11 +1,22 @@
 {
+	"title" : "Blog",
+	"author" : "",
+	"description" : "",
+	"language" : "zh-hans",
+	"links" : {
+		"sidebar" : {
+			"Home" : "http://renren.weapp.cc"
+		}
+	},
 	"plugins": [
 			"fontsettings",
 			"-sharing",
 			"-lunr",
 			"-search",
 			"highlight",
-			"livereload"
+			"livereload",
+			"expandable-chapters",
+			"disqus"
 	],
     "pluginsConfig": {
        "search": {
@@ -16,7 +27,10 @@
        },
 		"mathjax-commonhtml": {
             "defaultScaling": false
-        }
+        },
+		"disqus":{
+			"shortName":"webpack"
+		}
     },
     "styles": {
         "website": "styles/website.css"
