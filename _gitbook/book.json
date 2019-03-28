@@ -1,10 +1,24 @@
 {
-        "plugins": [
-                "fontsettings",
-                "sharing",
-                "lunr",
-                "search",
-                "highlight",
-                "livereload"
-        ]
+	"plugins": [
+			"fontsettings",
+			"-sharing",
+			"-lunr",
+			"-search",
+			"highlight",
+			"livereload"
+	],
+    "pluginsConfig": {
+       "search": {
+            "maxIndexSize": 100000
+       },
+       "lunr": {
+            "maxIndexSize": 1000000000
+       },
+		"mathjax-commonhtml": {
+            "defaultScaling": false
+        }
+    },
+    "styles": {
+        "website": "styles/website.css"
+    }
 }
