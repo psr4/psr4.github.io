@@ -37,10 +37,6 @@
     
 
     
-        
-        <link rel="stylesheet" href="../styles/website.css">
-        
-    
 
         
     
@@ -53,6 +49,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    
+    <link rel="prev" href="xss.html" />
     
 
     </head>
@@ -73,7 +71,7 @@
     
         
         <li>
-            <a href="http://renren.weapp.cc" target="_blank" class="custom-link">Home</a>
+            <a href="https://webpack.weapp.cc/webpack/index.html" target="_blank" class="custom-link">webpack</a>
         </li>
     
     
@@ -113,38 +111,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="php-zip.html">
-            
-                <a href="php-zip.html">
-            
-                    
-                    PHP打包后门
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2" data-path="reflection-demo.html">
+        <li class="chapter " data-level="1.2.1" data-path="reflection-demo.html">
             
                 <a href="reflection-demo.html">
             
                     
                     PHP反射
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="webshell.html">
-            
-                <a href="webshell.html">
-            
-                    
-                    PHP webshell
             
                 </a>
             
@@ -220,6 +192,20 @@
                 <span>
             
                     
+                    杂项
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
                     IOS
             
                 </span>
@@ -229,7 +215,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="build_ios_key.html">
+        <li class="chapter " data-level="1.4.1.1" data-path="build_ios_key.html">
             
                 <a href="build_ios_key.html">
             
@@ -247,12 +233,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.4.2" >
             
                 <span>
             
                     
-                    杂项
+                    后门
             
                 </span>
             
@@ -261,7 +247,51 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1" data-path="win10_repair.html">
+        <li class="chapter " data-level="1.4.2.1" data-path="php-zip.html">
+            
+                <a href="php-zip.html">
+            
+                    
+                    PHP打包源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="webshell.html">
+            
+                <a href="webshell.html">
+            
+                    
+                    PHPshell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="xss.html">
+            
+                <a href="xss.html">
+            
+                    
+                    xss脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="win10_repair.html">
             
                 <a href="win10_repair.html">
             
@@ -276,19 +306,6 @@
     
 
             </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" >
-            
-                <a target="_blank" href="https://webpack.weapp.cc/webpack/index.html">
-            
-                    
-                    webpack
-            
-                </a>
-            
-
             
         </li>
     
@@ -334,8 +351,8 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <p>Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register &quot;$($_.InstallLocation)\AppXManifest.xml&quot;}</p>
-
+                                <pre><code>Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register &quot;$($_.InstallLocation)\AppXManifest.xml&quot;}
+</code></pre>
                                 
                                 </section>
                             
@@ -346,6 +363,10 @@
 
             
                 
+                <a href="xss.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: xss脚本">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
                 
             
         
@@ -354,7 +375,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"win10应用修复","level":"1.5.1","depth":2,"next":{"title":"webpack","level":"1.6","depth":1,"url":"https://webpack.weapp.cc/webpack/index.html","ref":"https://webpack.weapp.cc/webpack/index.html","articles":[]},"previous":{"title":"杂项","level":"1.5","depth":1,"ref":"","articles":[{"title":"win10应用修复","level":"1.5.1","depth":2,"path":"notepad/win10_repair.md","ref":"./notepad/win10_repair.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["fontsettings","-sharing","-lunr","-search","highlight","livereload","expandable-chapters","disqus","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"webpack"},"livereload":{},"search":{"maxIndexSize":100000},"mathjax-commonhtml":{"defaultScaling":false},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Blog","language":"zh-hans","links":{"sidebar":{"Home":"http://renren.weapp.cc"}},"gitbook":"*","description":""},"file":{"path":"notepad/win10_repair.md","mtime":"2019-03-28T11:30:46.617Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-28T12:48:33.885Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"win10应用修复","level":"1.4.3","depth":2,"previous":{"title":"xss脚本","level":"1.4.2.3","depth":3,"path":"notepad/xss.md","ref":"./notepad/xss.md","articles":[]},"dir":"ltr"},"config":{"plugins":["fontsettings","-sharing","-lunr","-search","highlight","livereload","expandable-chapters","disqus","livereload"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"webpack"},"livereload":{},"search":{"maxIndexSize":100000},"mathjax-commonhtml":{"defaultScaling":false},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Blog","language":"zh-hans","links":{"sidebar":{"webpack":"https://webpack.weapp.cc/webpack/index.html"}},"gitbook":"*","description":""},"file":{"path":"notepad/win10_repair.md","mtime":"2019-03-29T00:31:28.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T00:44:30.187Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
