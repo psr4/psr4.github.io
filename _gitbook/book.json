@@ -5,7 +5,7 @@
 	"language" : "zh-hans",
 	"links" : {
 		"sidebar" : {
-			"Home" : "http://renren.weapp.cc"
+			"webpack" : "https://webpack.weapp.cc/webpack/index.html"
 		}
 	},
 	"plugins": [
@@ -33,6 +33,5 @@
 		}
     },
     "styles": {
-        "website": "styles/website.css"
     }
 }
