@@ -5,7 +5,7 @@
 	* [PHP反射](./php/reflection-demo.md)
 * [前端]()
 	* [VUE]()
-		* [vue配置](./front/vue_config.md)
+		* [vue配置](./front/vue/vue_config.md)
 * [环境]()
 	* [node v8.0版本](./notepad/node_v8.md)
 	* [Nginx 代理](./notepad/nginx_proxy.md)
