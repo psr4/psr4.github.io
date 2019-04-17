@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>win10应用修复 · Blog</title>
+        <title>协程 · Blog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -50,7 +50,7 @@
 
     
     
-    <link rel="prev" href="xss.html" />
+    <link rel="prev" href="buffer.html" />
     
 
     </head>
@@ -111,9 +111,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../php/reflection-demo.html">
+        <li class="chapter " data-level="1.2.1" data-path="reflection-demo.html">
             
-                <a href="../php/reflection-demo.html">
+                <a href="reflection-demo.html">
             
                     
                     PHP反射
@@ -124,9 +124,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../php/rpc.html">
+        <li class="chapter " data-level="1.2.2" data-path="rpc.html">
             
-                <a href="../php/rpc.html">
+                <a href="rpc.html">
             
                     
                     简单TCP
@@ -137,9 +137,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../php/buffer.html">
+        <li class="chapter " data-level="1.2.3" data-path="buffer.html">
             
-                <a href="../php/buffer.html">
+                <a href="buffer.html">
             
                     
                     输出流
@@ -150,9 +150,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../php/pcntl.html">
+        <li class="chapter active" data-level="1.2.4" data-path="pcntl.html">
             
-                <a href="../php/pcntl.html">
+                <a href="pcntl.html">
             
                     
                     协程
@@ -233,9 +233,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="node_v8.html">
+        <li class="chapter " data-level="1.4.1" data-path="../notepad/node_v8.html">
             
-                <a href="node_v8.html">
+                <a href="../notepad/node_v8.html">
             
                     
                     node v8.0版本
@@ -246,9 +246,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="nginx_proxy.html">
+        <li class="chapter " data-level="1.4.2" data-path="../notepad/nginx_proxy.html">
             
-                <a href="nginx_proxy.html">
+                <a href="../notepad/nginx_proxy.html">
             
                     
                     Nginx 代理
@@ -259,9 +259,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="v8js.html">
+        <li class="chapter " data-level="1.4.3" data-path="../notepad/v8js.html">
             
-                <a href="v8js.html">
+                <a href="../notepad/v8js.html">
             
                     
                     编译V8JS
@@ -305,9 +305,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1.1" data-path="build_ios_key.html">
+        <li class="chapter " data-level="1.5.1.1" data-path="../notepad/build_ios_key.html">
             
-                <a href="build_ios_key.html">
+                <a href="../notepad/build_ios_key.html">
             
                     
                     生成IPA证书
@@ -337,9 +337,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.2.1" data-path="php-zip.html">
+        <li class="chapter " data-level="1.5.2.1" data-path="../notepad/php-zip.html">
             
-                <a href="php-zip.html">
+                <a href="../notepad/php-zip.html">
             
                     
                     PHP打包源码
@@ -350,9 +350,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2.2" data-path="webshell.html">
+        <li class="chapter " data-level="1.5.2.2" data-path="../notepad/webshell.html">
             
-                <a href="webshell.html">
+                <a href="../notepad/webshell.html">
             
                     
                     PHPshell
@@ -363,9 +363,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2.3" data-path="xss.html">
+        <li class="chapter " data-level="1.5.2.3" data-path="../notepad/xss.html">
             
-                <a href="xss.html">
+                <a href="../notepad/xss.html">
             
                     
                     xss脚本
@@ -381,9 +381,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.3" data-path="win10_repair.html">
+        <li class="chapter " data-level="1.5.3" data-path="../notepad/win10_repair.html">
             
-                <a href="win10_repair.html">
+                <a href="../notepad/win10_repair.html">
             
                     
                     win10应用修复
@@ -429,7 +429,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >win10应用修复</a>
+        <a href=".." >协程</a>
     </h1>
 </div>
 
@@ -441,7 +441,53 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <pre><code>Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register &quot;$($_.InstallLocation)\AppXManifest.xml&quot;}
+                                <pre><code>&#xFFFD;&#x63B;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;
+&lt;?php
+if (pcntl_fork() &gt; 0) {
+    echo &apos;exit!&apos;;
+    exit();
+}
+posix_setsid();
+chdir(&apos;/&apos;);
+$old = umask(0);
+for (; ;) {
+    sleep(1);
+    file_put_contents(&apos;1.txt&apos;, &apos;child&apos;, 8);
+}
+</code></pre><pre><code>// &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;
+&lt;?php
+$stime = microtime(true);
+$max = 10;
+$run = 0;
+for ($i = 0; $i &lt; 20; $i++) {
+    //&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; &#xFFFD;&#x234;&#xFFFD;&#xFFFD;&#x4FD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x2F3;&#xFFFD;
+    if ($max &lt;= $run) {
+        pcntl_waitpid(-1, $status);
+        $run--;
+        if ($res == &apos;-1&apos;) {
+            echo &apos;wait &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;!&apos;;
+        }
+    }
+    $pid = pcntl_fork();
+    if ($pid &gt; 0) {
+        //&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;
+        $run = $run + 1;
+    } elseif ($pid == 0) {
+        //&#xFFFD;&#x4FD;&#xFFFD;&#xFFFD;&#xFFFD;
+        sleep(3);
+        echo &apos;task&apos;, $i, &apos;-finish&apos;, PHP_EOL;
+        exit;
+    } else {
+        echo &apos;fork &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;!&apos;;
+    }
+}
+//&#xFFFD;&#x234;&#xFFFD;&#xFFFD;&#x4FD;&#xFFFD;&#xFFFD;&#xFFFD;&#x22B;&#xFFFD;&#xFFFD;&#xFFFD;&#x2F3;&#xFFFD;
+for (;pcntl_waitpid(-1, $status) != &apos;-1&apos;;) {
+
+}
+$etime = microtime(true);
+echo $etime - $stime;
+die();
 </code></pre>
                                 
                                 </section>
@@ -453,7 +499,7 @@
 
             
                 
-                <a href="xss.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: xss脚本">
+                <a href="buffer.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 输出流">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -465,7 +511,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"win10应用修复","level":"1.5.3","depth":2,"previous":{"title":"xss脚本","level":"1.5.2.3","depth":3,"path":"notepad/xss.md","ref":"./notepad/xss.md","articles":[]},"dir":"ltr"},"config":{"plugins":["fontsettings","-sharing","-lunr","-search","highlight","livereload","expandable-chapters","disqus"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"webpack"},"livereload":{},"search":{"maxIndexSize":100000},"mathjax-commonhtml":{"defaultScaling":false},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Blog","language":"zh-hans","links":{"sidebar":{"webpack":"https://webpack.weapp.cc/webpack/index.html"}},"gitbook":"*","description":""},"file":{"path":"notepad/win10_repair.md","mtime":"2019-03-29T00:31:28.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-17T06:52:51.661Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"协程","level":"1.2.4","depth":2,"next":{"title":"前端","level":"1.3","depth":1,"ref":"","articles":[{"title":"VUE","level":"1.3.1","depth":2,"ref":"","articles":[{"title":"vue配置","level":"1.3.1.1","depth":3,"path":"front/vue/vue_config.md","ref":"./front/vue/vue_config.md","articles":[]}]}]},"previous":{"title":"输出流","level":"1.2.3","depth":2,"path":"php/buffer.md","ref":"./php/buffer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["fontsettings","-sharing","-lunr","-search","highlight","livereload","expandable-chapters","disqus"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"webpack"},"livereload":{},"search":{"maxIndexSize":100000},"mathjax-commonhtml":{"defaultScaling":false},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Blog","language":"zh-hans","links":{"sidebar":{"webpack":"https://webpack.weapp.cc/webpack/index.html"}},"gitbook":"*","description":""},"file":{"path":"php/pcntl.md","mtime":"2019-04-17T06:31:09.076Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-17T06:52:51.661Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

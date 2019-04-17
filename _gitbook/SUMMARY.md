@@ -5,7 +5,7 @@
 	* [PHP反射](./php/reflection-demo.md)
 	* [简单TCP](./php/rpc.md)
 	* [输出流](./php/buffer.md)
-	* [协程](./php/buffer.md)
+	* [协程](./php/pcntl.md)
 * [前端]() 
 	* [VUE]()
 		* [vue配置](./front/vue/vue_config.md)
