@@ -5,7 +5,6 @@
         header('X-Accel-Buffering: no');
         for ($i = 100; $i > 0; $i--) {
             echo $i . "<br>";
-            ob_flush();
             sleep(1);
         }
 ```

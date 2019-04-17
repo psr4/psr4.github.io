@@ -1,5 +1,5 @@
 ```
-ÊØ»¤½ø³Ì
+å®ˆæŠ¤è¿›ç¨‹
 <?php
 if (pcntl_fork() > 0) {
     echo 'exit!';
@@ -15,34 +15,34 @@ for (; ;) {
 ```
 
 ```
-// ¶à½ø³Ì
+// å¤šè¿›ç¨‹
 <?php
 $stime = microtime(true);
 $max = 10;
 $run = 0;
 for ($i = 0; $i < 20; $i++) {
-	//³¬¹ı½ø³ÌÊı µÈ´ı×Ó½ø³ÌÍË³ö
+	//è¶…è¿‡è¿›ç¨‹æ•° ç­‰å¾…å­è¿›ç¨‹é€€å‡º
     if ($max <= $run) {
         pcntl_waitpid(-1, $status);
         $run--;
         if ($res == '-1') {
-            echo 'wait ³ö´í!';
+            echo 'wait å‡ºé”™!';
         }
     }
     $pid = pcntl_fork();
     if ($pid > 0) {
-		//Ö÷½ø³Ì
+		//ä¸»è¿›ç¨‹
         $run = $run + 1;
     } elseif ($pid == 0) {
-		//×Ó½ø³Ì
+		//å­è¿›ç¨‹
         sleep(3);
         echo 'task', $i, '-finish', PHP_EOL;
         exit;
     } else {
-        echo 'fork ³ö´í!';
+        echo 'fork å‡ºé”™!';
     }
 }
-//µÈ´ı×Ó½ø³ÌÈ«²¿ÍË³ö
+//ç­‰å¾…å­è¿›ç¨‹å…¨éƒ¨é€€å‡º
 for (;pcntl_waitpid(-1, $status) != '-1';) {
 
 }
