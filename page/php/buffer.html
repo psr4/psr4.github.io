@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>生成IPA证书 · Blog</title>
+        <title>输出流 · Blog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -49,6 +49,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="buffer.html" />
+    
+    
+    <link rel="prev" href="rpc.html" />
     
 
     </head>
@@ -109,9 +113,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../php/reflection-demo.html">
+        <li class="chapter " data-level="1.2.1" data-path="reflection-demo.html">
             
-                <a href="../php/reflection-demo.html">
+                <a href="reflection-demo.html">
             
                     
                     PHP反射
@@ -122,9 +126,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../php/rpc.html">
+        <li class="chapter " data-level="1.2.2" data-path="rpc.html">
             
-                <a href="../php/rpc.html">
+                <a href="rpc.html">
             
                     
                     简单TCP
@@ -135,9 +139,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../php/buffer.html">
+        <li class="chapter active" data-level="1.2.3" data-path="buffer.html">
             
-                <a href="../php/buffer.html">
+                <a href="buffer.html">
             
                     
                     输出流
@@ -148,9 +152,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../php/buffer.html">
+        <li class="chapter active" data-level="1.2.4" data-path="buffer.html">
             
-                <a href="../php/buffer.html">
+                <a href="buffer.html">
             
                     
                     协程
@@ -231,9 +235,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="node_v8.html">
+        <li class="chapter " data-level="1.4.1" data-path="../notepad/node_v8.html">
             
-                <a href="node_v8.html">
+                <a href="../notepad/node_v8.html">
             
                     
                     node v8.0版本
@@ -244,9 +248,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="nginx_proxy.html">
+        <li class="chapter " data-level="1.4.2" data-path="../notepad/nginx_proxy.html">
             
-                <a href="nginx_proxy.html">
+                <a href="../notepad/nginx_proxy.html">
             
                     
                     Nginx 代理
@@ -257,9 +261,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="v8js.html">
+        <li class="chapter " data-level="1.4.3" data-path="../notepad/v8js.html">
             
-                <a href="v8js.html">
+                <a href="../notepad/v8js.html">
             
                     
                     编译V8JS
@@ -303,9 +307,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1.1" data-path="build_ios_key.html">
+        <li class="chapter " data-level="1.5.1.1" data-path="../notepad/build_ios_key.html">
             
-                <a href="build_ios_key.html">
+                <a href="../notepad/build_ios_key.html">
             
                     
                     生成IPA证书
@@ -335,9 +339,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.2.1" data-path="php-zip.html">
+        <li class="chapter " data-level="1.5.2.1" data-path="../notepad/php-zip.html">
             
-                <a href="php-zip.html">
+                <a href="../notepad/php-zip.html">
             
                     
                     PHP打包源码
@@ -348,9 +352,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2.2" data-path="webshell.html">
+        <li class="chapter " data-level="1.5.2.2" data-path="../notepad/webshell.html">
             
-                <a href="webshell.html">
+                <a href="../notepad/webshell.html">
             
                     
                     PHPshell
@@ -361,9 +365,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2.3" data-path="xss.html">
+        <li class="chapter " data-level="1.5.2.3" data-path="../notepad/xss.html">
             
-                <a href="xss.html">
+                <a href="../notepad/xss.html">
             
                     
                     xss脚本
@@ -379,9 +383,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="win10_repair.html">
+        <li class="chapter " data-level="1.5.3" data-path="../notepad/win10_repair.html">
             
-                <a href="win10_repair.html">
+                <a href="../notepad/win10_repair.html">
             
                     
                     win10应用修复
@@ -427,7 +431,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >生成IPA证书</a>
+        <a href=".." >输出流</a>
     </h1>
 </div>
 
@@ -439,26 +443,23 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <p>-&#x51C6;&#x5907;OpenSSL</p>
-<pre><code>&#x8BBF;&#x95EE;&#xFF1A;http://slproweb.com/products/Win32OpenSSL.html &#x3002;&#x5E76;&#x4E0B;&#x8F7D;Win32 OpenSSL v1.0.1c Light&#x7248;&#x672C;&#xFF08;&#x6CE8;&#x610F;&#xFF1A;&#x7248;&#x672C;&#x53EF;&#x80FD;&#x4F1A;&#x5347;&#x7EA7;&#xFF09;&#xFF0C;
-&#x5982;&#x679C;&#x60A8;&#x8FD0;&#x884C;OpenSSL&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x4E0B;&#x8F7D;Visual C++ 2008 Redistributables&#x5B89;&#x88C5;&#x3002;
-&#x5B89;&#x88C5;OpenSSL&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x9ED8;&#x8BA4;&#x5728;C&#x76D8;&#x7684;OpenSSL-Win32&#x3002;
-</code></pre><p>-&#x751F;&#x6210;CSR&#x8BF7;&#x6C42;&#x6587;&#x4EF6;</p>
-<pre><code>&#x8FDB;&#x5165;Windows&#x7684;&#x547D;&#x4EE4;&#x884C;&#xFF08;WIN+R&#xFF0C;&#x8FDB;&#x5165;&#x8FD0;&#x884C;&#xFF09;&#x3002;&#x5F00;&#x59CB;&#x8F93;&#x5165;&#x5404;&#x4E2A;&#x547D;&#x4EE4;.
-cd C:\OpenSSL-Win32\bin\
-set RANDFILE=.rnd
-set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg
-openssl genrsa -out my.key 2048
-openssl req -new -key my.key -out my.certSigningRequest -subj &quot;/emailAddress=myemail@sample.com,CN=Common Name,C=CN&quot;
-</code></pre><p>-&#x83B7;&#x53D6;CER&#x8BC1;&#x4E66;</p>
-<pre><code>&#x5C06;&#x751F;&#x6210;&#x7684;certSigningRequest&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;Apple&#x7684;&#x5F00;&#x53D1;&#x8005;&#x76F8;&#x5173;&#x9875;&#x9762;&#xFF08;&#x4F8B;&#x5982;&#x5F00;&#x53D1;&#x8005;&#x8BC1;&#x4E66;&#x3001;&#x63A8;&#x9001;&#x8BC1;&#x4E66;&#x7B49;&#xFF09;
-https://developer.apple.com/ios/manage/certificates/team/distribute.action
-&#x5C06;&#x6700;&#x540E;&#x751F;&#x6210;&#x7684;cer&#x6587;&#x4EF6;&#x6539;&#x4E2A;&#x540D;&#x5B57;&#x540E;&#x653E;&#x5230;C:\OpenSSL-Win32\bin\&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x548C;&#x4E4B;&#x524D;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x653E;&#x5728;&#x4E00;&#x8D77;&#x3002;
-</code></pre><p>-&#x5BFC;&#x51FA;p12&#x6587;&#x4EF6;</p>
-<pre><code>P12&#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E86;&#x8BC1;&#x4E66;&#x7684;&#x5BC6;&#x94A5;&#x548C;&#x516C;&#x94A5;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x8FC1;&#x79FB;&#x5230;&#x5176;&#x4ED6;&#x7535;&#x8111;&#x4E0A;&#x3002; &#x6700;&#x540E;&#x5728;&#x521A;&#x624D;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x884C;&#xFF08;&#x5982;&#x679C;&#x4E4B;&#x524D;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#x88AB;&#x5173;&#x4E86;&#xFF0C;&#x8FD8;&#x662F;&#x8981;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x4E00;&#x904D;&#x5F00;&#x59CB;&#x7684;&#x51E0;&#x6761;set&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x547D;&#x4EE4;&#xFF09;&#xFF1A;
-openssl x509 -in my.cer -inform DER -out my.pem -outform PEM
-openssl pkcs12 -export -inkey my.key -in my.pem -out my.p12 -password pass:111111
-&#x8FD9;&#x6837;&#x5C31;&#x751F;&#x6210;&#x4E86;&#x5BC6;&#x7801;&#x4E3A;111111&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x4E3A;my.p12&#x7684;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5BFC;&#x5165;MAC&#x7535;&#x8111;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x5230;&#x8FFD;&#x4FE1;&#x9B54;&#x76D2;&#x7684;IOS&#x4EE3;&#x7B7E;&#x540D;&#x533A;&#x3002;
+                                <pre><code>&#x5B9E;&#x65F6;&#x8F93;&#x51FA;
+&lt;?php
+        ob_implicit_flush();
+        header(&apos;X-Accel-Buffering: no&apos;);
+        for ($i = 100; $i &gt; 0; $i--) {
+            echo $i . &quot;&lt;br&gt;&quot;;
+            ob_flush();
+            sleep(1);
+        }
+</code></pre><pre><code>&#x63D0;&#x524D;&#x8F93;&#x51FA;
+&lt;?php
+        echo date(&apos;Y-m-d H:i:s&apos;);
+        fastcgi_finish_request();
+        ignore_user_abort(true);
+        set_time_limit(0);
+        sleep(3);
+        file_put_contents(&apos;uploads/1.txt&apos;,date(&apos;Y-m-d H:i:s&apos;));
 </code></pre>
                                 
                                 </section>
@@ -470,6 +471,14 @@ openssl pkcs12 -export -inkey my.key -in my.pem -out my.p12 -password pass:11111
 
             
                 
+                <a href="rpc.html" class="navigation navigation-prev " aria-label="Previous page: 简单TCP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="buffer.html" class="navigation navigation-next " aria-label="Next page: 协程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -478,7 +487,7 @@ openssl pkcs12 -export -inkey my.key -in my.pem -out my.p12 -password pass:11111
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"生成IPA证书","level":"1.5.1.1","depth":3,"next":{"title":"后门","level":"1.5.2","depth":2,"ref":"","articles":[{"title":"PHP打包源码","level":"1.5.2.1","depth":3,"path":"notepad/php-zip.md","ref":"./notepad/php-zip.md","articles":[]},{"title":"PHPshell","level":"1.5.2.2","depth":3,"path":"notepad/webshell.md","ref":"./notepad/webshell.md","articles":[]},{"title":"xss脚本","level":"1.5.2.3","depth":3,"path":"notepad/xss.md","ref":"./notepad/xss.md","articles":[]}]},"previous":{"title":"IOS","level":"1.5.1","depth":2,"ref":"","articles":[{"title":"生成IPA证书","level":"1.5.1.1","depth":3,"path":"notepad/build_ios_key.md","ref":"./notepad/build_ios_key.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["fontsettings","-sharing","-lunr","-search","highlight","livereload","expandable-chapters","disqus"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"webpack"},"livereload":{},"search":{"maxIndexSize":100000},"mathjax-commonhtml":{"defaultScaling":false},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Blog","language":"zh-hans","links":{"sidebar":{"webpack":"https://webpack.weapp.cc/webpack/index.html"}},"gitbook":"*","description":""},"file":{"path":"notepad/build_ios_key.md","mtime":"2019-03-29T00:31:28.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-17T06:52:14.270Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"输出流","level":"1.2.3","depth":2,"next":{"title":"协程","level":"1.2.4","depth":2,"path":"php/buffer.md","ref":"./php/buffer.md","articles":[]},"previous":{"title":"简单TCP","level":"1.2.2","depth":2,"path":"php/rpc.md","ref":"./php/rpc.md","articles":[]},"dir":"ltr"},"config":{"plugins":["fontsettings","-sharing","-lunr","-search","highlight","livereload","expandable-chapters","disqus"],"styles":{},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"webpack"},"livereload":{},"search":{"maxIndexSize":100000},"mathjax-commonhtml":{"defaultScaling":false},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Blog","language":"zh-hans","links":{"sidebar":{"webpack":"https://webpack.weapp.cc/webpack/index.html"}},"gitbook":"*","description":""},"file":{"path":"php/buffer.md","mtime":"2019-04-17T06:51:09.168Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-17T06:52:14.270Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
