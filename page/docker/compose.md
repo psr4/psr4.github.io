@@ -1,7 +1,7 @@
 #### 试写一个套 docker-compose 的 lnmp  
 - TODO: 换fpm 或给fpm转上mysql扩展
+##### 目录结构
 ```
-目录结构
 -docker-compose.yml
 -mysqldata
 -nginx
@@ -9,8 +9,9 @@
 -wwwroot
     -index.php
 ```
+
+##### nginx.conf
 ```
-nginx.conf
 server {
     listen       80;
     server_name  localhost;
@@ -34,9 +35,10 @@ server {
     }
 
 }
+
 ```
+##### docker-compose.yml
 ```
-docker-compose.yml
 version: "3"
 services: 
     php:
@@ -72,4 +74,5 @@ services:
 
 networks: 
     lnmp:
+    
 ```
