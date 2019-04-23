@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee32d672-5054-442c-9ebe-29e6a2f8eb02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/psr4.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_gitbook/docker/compose.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/docker/compose.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/docker/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/docker/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/front/vue/vue_config.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/front/vue/vue_config.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/build_ios_key.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/build_ios_key.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/nginx_proxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/nginx_proxy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/node_v8.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/node_v8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/php-zip.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/php-zip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/v8js.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/v8js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/webshell.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/webshell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/win10_repair.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/win10_repair.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/notepad/xss.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/notepad/xss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/php/buffer.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/php/buffer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/php/pcntl.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/php/pcntl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/php/reflection-demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/php/reflection-demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/php/rpc.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/php/rpc.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_gitbook/docker/compose.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="180">
+                <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/_gitbook/docker/compose.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/psr4.github.io.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="5" />
+    <option name="y" value="49" />
+    <option name="width" value="1296" />
+    <option name="height" value="778" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="psr4.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psr4.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psr4.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psr4.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_gitbook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psr4.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psr4.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_gitbook" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee32d672-5054-442c-9ebe-29e6a2f8eb02" name="Default Changelist" comment="" />
+      <created>1555987746231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555987746231</updated>
+      <workItem from="1555987747412" duration="308000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="308000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="5" y="49" width="1296" height="778" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.329582" />
+      <window_info anchor="bottom" id="Terminal" weight="0.329582" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_gitbook/docker/compose.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
