@@ -16,6 +16,7 @@
 	* [node v8.0版本](./notepad/node_v8.md)
 	* [Nginx 代理](./notepad/nginx_proxy.md)
 	* [编译V8JS](./notepad/v8js.md)
+	* [编译sodium](./notepad/sodium.md)
 * [杂项]()
 	* [IOS]()
 		* [生成IPA证书](./notepad/build_ios_key.md)
