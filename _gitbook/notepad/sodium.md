@@ -1,4 +1,4 @@
-> centos 安装 sodium
+> centos 瀹夎 sodium
 ```
 yum -y groupinstall "Development Tools"
 yum install unzip autoconf automake libtool -y
@@ -10,7 +10,7 @@ ldconfig
 cd .. && rm -rf libsodium-master.zip && rm -rf libsodium-master
 ```
 
-> php 安装sodium扩张
+> php 瀹夎sodium鎵╁紶
 ```
 pecl install libsodium
 ```
